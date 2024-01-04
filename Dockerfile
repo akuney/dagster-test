@@ -20,4 +20,4 @@ EXPOSE 3000
 ENV DAGSTER_HOME=/app
 
 # Run dagster when the container launches
-CMD ["dagster", "daemon", "run"]
+CMD ["dagster", "dev", "-f", "hello-dagster.py"]
